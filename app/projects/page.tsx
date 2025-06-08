@@ -1,6 +1,7 @@
 import ImageHeader from '@/components/custom/image-header/image-header'
 import Outline from '@/components/custom/outline/outline'
 import OutlineLink from '@/components/custom/outline/outline-link'
+import ProjectImage from '@/components/custom/section/project-image'
 import ProjectItem from '@/components/custom/section/project-item'
 import Section from '@/components/custom/section/section'
 import Image from 'next/image'
@@ -28,18 +29,24 @@ export default function Projects() {
                         <Section id={'websites'} name={'Websites'}>
                             <ProjectItem description={'Software engineering projects, music, and contact info'}
                                          link={'https://github.com/braydenoneal/personal-website'}
-                                         name={'Personal Website'}/>
+                                         name={'Personal Website'}>
+                                <ProjectImage alt={'Personal website'} src={'/images/projects/personal-website.png'}/>
+                            </ProjectItem>
                             <ProjectItem description={'Small Music Therapy business website'}
                                          link={'https://www.garnermusictherapyllc.com/'}
-                                         name={'Music Therapy Website'}/>
+                                         name={'Music Therapy Website'}>
+                                <ProjectImage alt={'Garner Music Therapy'}
+                                              src={'/images/projects/garner-music-therapy.png'}/>
+                            </ProjectItem>
                             <ProjectItem description={'Admin panel for the Drury Mirror news website'}
                                          link={'https://github.com/drury-mirror/drury-mirror'}
-                                         name={'University News Website Backend'}/>
+                                         name={'University News Website Backend'}>
+                                <ProjectImage alt={'Drury Mirror'}
+                                              src={'/images/projects/drury-mirror.png'}/>
+                            </ProjectItem>
                         </Section>
                         <Section id={'applications'} name={'Applications'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </ProjectItem>
+                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
                         </Section>
                         <Section id={'artificial-intelligence'} name={'Artificial Intelligence'}>
                             <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
