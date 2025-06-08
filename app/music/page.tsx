@@ -1,7 +1,6 @@
 import ImageHeader from '@/components/custom/image-header/image-header'
 import Outline from '@/components/custom/outline/outline'
 import OutlineLink from '@/components/custom/outline/outline-link'
-import ProjectItem from '@/components/custom/section/project-item'
 import Section from '@/components/custom/section/section'
 import SocialLink from '@/components/custom/social-sidebar/social-link'
 import SocialSidebar from '@/components/custom/social-sidebar/social-sidebar'
@@ -10,7 +9,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Projects() {
+export default function Music() {
     return (
         <div className='self-stretch inline-flex flex-col justify-start items-center gap-4'>
             <ImageHeader name={'Music'}>
@@ -32,7 +31,7 @@ export default function Projects() {
                                     <Image alt={'YouTube'} src={'/images/social/color/youtube.svg'} width={40}
                                            height={40}/>
                                 </Link>
-                                <Link href={'https://www.facebook.com/brayden.oneal.73/'} target={'_blank'}>
+                                <Link href={'https://www.instagram.com/braydenonealmusic/'} target={'_blank'}>
                                     <Image alt={'Instagram'} src={'/images/social/color/instagram.svg'} width={40}
                                            height={40}/>
                                 </Link>
@@ -57,14 +56,12 @@ export default function Projects() {
                             <Video videoId={'yFthsifIWFw'}/>
                         </Section>
                         <Section id={'live-performances'} name={'Live Performances'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
                         </Section>
                     </div>
                     <SocialSidebar>
                         <SocialLink alt={'YouTube'} link={'https://www.youtube.com/@braydenoneal'}
                                     src={'/images/social/monochrome/youtube.svg'}/>
-                        {/*TODO: Instagram link*/}
-                        <SocialLink alt={'Instagram'} link={'https://www.facebook.com/brayden.oneal.73/'}
+                        <SocialLink alt={'Instagram'} link={'https://www.instagram.com/braydenonealmusic/'}
                                     src={'/images/social/monochrome/instagram.svg'}/>
                         <SocialLink alt={'Facebook'} link={'https://www.facebook.com/brayden.oneal.73/'}
                                     src={'/images/social/monochrome/facebook.svg'}/>
