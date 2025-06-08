@@ -20,8 +20,8 @@ export default function Home() {
                 </div>
                 <div className='self-stretch flex-1 relative'/>
                 <div className='self-stretch inline-flex flex-wrap justify-between gap-4'>
-                    <Link href={'/'}
-                          className='hover:scale-105 duration-150 p-4 bg-gradient-to-br from-[#211D1D] to-[#2F2B2B] rounded-md outline outline-offset-[-1px] outline-[#262626] inline-flex flex-col justify-start items-center gap-4'>
+                    <Link href={'/projects'}
+                          className='hover:scale-102 duration-150 p-4 bg-gradient-to-br from-[#211D1D] to-[#2F2B2B] rounded-md outline outline-offset-[-1px] outline-[#262626] inline-flex flex-col justify-start items-center gap-4'>
                         <div className='w-[448px] py-8 relative flex flex-col justify-center items-center'>
                             <Image src={'/chip.svg'} alt={'Chip'} width={192} height={192}/>
                         </div>
@@ -29,8 +29,8 @@ export default function Home() {
                             className='self-stretch text-center justify-start text-[#FAF3F3] text-2xl font-semibold'>Projects
                         </div>
                     </Link>
-                    <Link href={'/'}
-                          className='hover:scale-105 duration-150 p-4 bg-gradient-to-br from-[#211D1D] to-[#2F2B2B] rounded-md outline outline-offset-[-1px] outline-[#262626] inline-flex flex-col justify-start items-center gap-4'>
+                    <Link href={'/music'}
+                          className='hover:scale-102 duration-150 p-4 bg-gradient-to-br from-[#211D1D] to-[#2F2B2B] rounded-md outline outline-offset-[-1px] outline-[#262626] inline-flex flex-col justify-start items-center gap-4'>
                         <div className='h-64 p-8 relative flex flex-col justify-center items-center'>
                             <Image src={'/keys.svg'} alt={'Keys'} width={384} height={384}/>
                         </div>

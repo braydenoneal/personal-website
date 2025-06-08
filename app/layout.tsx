@@ -28,13 +28,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en' suppressHydrationWarning>
-        <body className={`${inter.className} antialiased h-screen flex flex-col`}>
+        <body
+            className={`${inter.className} antialiased min-h-screen relative flex flex-none flex-col`}>
         <ThemeProvider
             attribute='class'
             defaultTheme='dark'
             disableTransitionOnChange
         >
-            <header className={'sticky top-0 border-b bg-[#171615] border-[#262626]'}>
+            <header className={'sticky h-16 top-0 border-b bg-[#171615] border-[#262626] z-10'}>
                 <div className={'h-16 flex items-center justify-between mx-auto max-w-[1024px] px-4'}>
                     <Link className={'flex gap-4 items-center font-medium text-sm'}
                           href={'/'}>
@@ -44,13 +45,16 @@ export default function RootLayout({
                     <NavigationMenu>
                         <NavigationMenuList className={'font-semibold text-sm'}>
                             <NavigationMenuItem>
-                                <NavigationMenuLink asChild><Link href='/' passHref>Projects</Link></NavigationMenuLink>
+                                <NavigationMenuLink asChild><Link href='/projects'
+                                                                  passHref>Projects</Link></NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <NavigationMenuLink asChild><Link href='/' passHref>Music</Link></NavigationMenuLink>
+                                <NavigationMenuLink asChild><Link href='/music'
+                                                                  passHref>Music</Link></NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <NavigationMenuLink asChild><Link href='/' passHref>Contact</Link></NavigationMenuLink>
+                                <NavigationMenuLink asChild><Link href='/contact'
+                                                                  passHref>Contact</Link></NavigationMenuLink>
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
