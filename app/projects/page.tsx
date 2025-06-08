@@ -47,16 +47,61 @@ export default function Projects() {
                             </ProjectItem>
                         </Section>
                         <Section id={'applications'} name={'Applications'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                            <ProjectItem description={'GitHub Classroom tools for Drury University'}
+                                         link={'https://github.com/dugit-app/dugit'} name={'Dugit'}/>
+                            <ProjectItem description={'An app to make photos easier to see for color blind individuals'}
+                                         link={'https://github.com/indivisual-eyes'} name={'IndiVisual Eyes'}/>
+                            <ProjectItem description={'Logic-based Sudoku solver written in Rust'}
+                                         link={'https://github.com/braydenoneal/sudoku-solver'}
+                                         name={'Sudoku Solver'}/>
                         </Section>
                         <Section id={'artificial-intelligence'} name={'Artificial Intelligence'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                            <ProjectItem description={'Audio classification using a neural network'}
+                                         link={'https://github.com/braydenoneal/neural-audio-classification'}
+                                         name={'Neural Audio Classification'}>
+                                <ProjectImage alt={'Neural Audio Classification'}
+                                              src={'/images/projects/neural-audio-classification.png'}/>
+                            </ProjectItem>
+                            <ProjectItem description={'Training a neural network to play Pong in Unity'}
+                                         link={'https://github.com/braydenoneal/ai-pong-unity'}
+                                         name={'AI Pong'}>
+                                <ProjectImage alt={'Pong'}
+                                              src={'/images/projects/pong.png'}/>
+                            </ProjectItem>
+                            <ProjectItem description={'Assignments for CSCI 461 at Drury University'}
+                                         link={'https://github.com/braydenoneal/csci-461'}
+                                         name={'CSCI 461: Artificial Intelligence'}/>
+                            <ProjectItem description={'Assignments for CSCI 362 at Drury University'}
+                                         link={'https://github.com/braydenoneal/csci-362'}
+                                         name={'CSCI 362: Intro to Machine Learning'}/>
                         </Section>
                         <Section id={'graphics'} name={'Graphics'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                            <ProjectItem description={'Minecraft clone written in C++ using OpenGL'}
+                                         link={'https://github.com/braydenoneal/minecraft-clone'}
+                                         name={'Minecraft Clone'}>
+                                <ProjectImage alt={'Minecraft Clone'}
+                                              src={'/images/projects/minecraft-clone.png'}/>
+                            </ProjectItem>
+                            <ProjectItem description={'Understanding and implementing 3D graphics'}
+                                         link={'https://github.com/braydenoneal/learning-computer-graphics'}
+                                         name={'Learning Computer Graphics'}>
+                                <ProjectImage alt={'Learning Computer Graphics'}
+                                              src={'/images/projects/learning-computer-graphics.png'}/>
+                            </ProjectItem>
+                            <ProjectItem description={'Displaying and navigating the Mandelbrot set'}
+                                         link={'https://github.com/braydenoneal/mandelbrot-navigator'}
+                                         name={'Mandelbrot Navigator'}>
+                                <ProjectImage alt={'Mandelbrot Navigator'}
+                                              src={'/images/projects/mandelbrot.png'}/>
+                            </ProjectItem>
                         </Section>
                         <Section id={'game-development'} name={'Game Development'}>
-                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                            <ProjectItem description={'Logic gate and cable mod for Minecraft'}
+                                         link={'https://github.com/braydenoneal/blogic'}
+                                         name={'Blogic'}>
+                                <ProjectImage alt={'Blogic'}
+                                              src={'/images/projects/blogic.png'}/>
+                            </ProjectItem>
                         </Section>
                     </div>
                     <SocialSidebar>
