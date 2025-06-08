@@ -27,11 +27,13 @@ export default function Projects() {
                     <div className='flex-1 p-4 inline-flex flex-col justify-start items-start gap-4 top-20'>
                         <Section id={'websites'} name={'Websites'}>
                             <ProjectItem description={'Software engineering projects, music, and contact info'}
-                                         link={'https://github.com/braydenoneal'} name={'Personal Website'}/>
+                                         link={'https://github.com/braydenoneal/personal-website'}
+                                         name={'Personal Website'}/>
                             <ProjectItem description={'Small Music Therapy business website'}
-                                         link={'https://github.com/braydenoneal'} name={'Music Therapy Website'}/>
+                                         link={'https://www.garnermusictherapyllc.com/'}
+                                         name={'Music Therapy Website'}/>
                             <ProjectItem description={'Admin panel for the Drury Mirror news website'}
-                                         link={'https://github.com/braydenoneal'}
+                                         link={'https://github.com/drury-mirror/drury-mirror'}
                                          name={'University News Website Backend'}/>
                         </Section>
                         <Section id={'applications'} name={'Applications'}>
