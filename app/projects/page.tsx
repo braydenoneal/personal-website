@@ -4,8 +4,9 @@ import OutlineLink from '@/components/custom/outline/outline-link'
 import ProjectImage from '@/components/custom/section/project-image'
 import ProjectItem from '@/components/custom/section/project-item'
 import Section from '@/components/custom/section/section'
+import SocialLink from '@/components/custom/social-sidebar/social-link'
+import SocialSidebar from '@/components/custom/social-sidebar/social-sidebar'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 export default function Projects() {
@@ -58,16 +59,10 @@ export default function Projects() {
                             <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
                         </Section>
                     </div>
-                    <div
-                        className='w-48 self-stretch p-4 inline-flex flex-col justify-start items-start gap-4'>
-                        <div className='flex flex-col justify-center items-start gap-4 sticky top-20'>
-                            <div className='w-8 h-8 relative overflow-hidden'>
-                                <Link href={'https://github.com/braydenoneal'}>
-                                    <Image src={'/github.svg'} alt={'Github'} width={32} height={32}/>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+                    <SocialSidebar>
+                        <SocialLink alt={'Github'} link={'https://github.com/braydenoneal'}
+                                    src={'/images/social/monochrome/github.svg'}/>
+                    </SocialSidebar>
                 </div>
             </div>
         </div>
