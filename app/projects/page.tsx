@@ -1,4 +1,8 @@
 import ImageHeader from '@/components/custom/image-header/image-header'
+import Outline from '@/components/custom/outline/outline'
+import OutlineLink from '@/components/custom/outline/outline-link'
+import ProjectItem from '@/components/custom/section/project-item'
+import Section from '@/components/custom/section/section'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -13,112 +17,37 @@ export default function Projects() {
             </ImageHeader>
             <div className='relative'>
                 <div className='w-[1024px] inline-flex justify-start items-start relative'>
-                    <div className='w-48 p-4 inline-flex flex-col justify-start items-start gap-4 sticky top-20'>
-                        <div
-                            className='justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Projects
-                        </div>
-                        <div className='self-stretch h-px bg-[#262626]'/>
-                        <Link href={'#websites'}
-                              className='justify-start text-[#FAF3F3] text-sm font-normal'>Websites</Link>
-                        <div className='justify-start text-[#FAF3F3] text-sm font-normal'>Applications</div>
-                        <div className='justify-start text-[#FAF3F3] text-sm font-normal'>Artificial
-                            Intelligence
-                        </div>
-                        <div className='justify-start text-[#FAF3F3] text-sm font-normal'>Graphics</div>
-                        <div className='justify-start text-[#FAF3F3] text-sm font-normal'>Game Development</div>
-                    </div>
+                    <Outline name={'Projects'}>
+                        <OutlineLink id={'websites'} name={'Websites'}/>
+                        <OutlineLink id={'applications'} name={'Applications'}/>
+                        <OutlineLink id={'artificial-intelligence'} name={'Artificial Intelligence'}/>
+                        <OutlineLink id={'graphics'} name={'Graphics'}/>
+                        <OutlineLink id={'game-development'} name={'Game Development'}/>
+                    </Outline>
                     <div className='flex-1 p-4 inline-flex flex-col justify-start items-start gap-4 top-20'>
-                        <div className='self-stretch flex flex-col justify-start items-start gap-4 scroll-mt-24'
-                             id={'websites'}>
-                            <Link href={'#websites'}
-                                  className='self-stretch justify-start text-[#FAF3F3] text-base font-semibold tracking-wide'>Websites
-                            </Link>
-                            <div className='self-stretch h-px bg-[#262626]'/>
-                            <Link href={'https://github.com/braydenoneal'} target={'_blank'}
-                                  className='hover:scale-102 duration-150 self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Personal
-                                    Website
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Software
-                                    engineering projects, music, and contact info
-                                </div>
+                        <Section id={'websites'} name={'Websites'}>
+                            <ProjectItem description={'Software engineering projects, music, and contact info'}
+                                         link={'https://github.com/braydenoneal'} name={'Personal Website'}/>
+                            <ProjectItem description={'Small Music Therapy business website'}
+                                         link={'https://github.com/braydenoneal'} name={'Music Therapy Website'}/>
+                            <ProjectItem description={'Admin panel for the Drury Mirror news website'}
+                                         link={'https://github.com/braydenoneal'}
+                                         name={'University News Website Backend'}/>
+                        </Section>
+                        <Section id={'applications'} name={'Applications'}>
+                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}>
                                 <div className='w-60 h-32 bg-stone-700'/>
-                            </Link>
-                            <div
-                                className='self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Music
-                                    Therapy Website
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Small
-                                    Music Therapy business website
-                                </div>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </div>
-                            <div
-                                className='self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>University
-                                    News Website Backend
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Admin
-                                    panel for the Drury Mirror news website
-                                </div>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </div>
-                        </div>
-                        <div className='self-stretch flex flex-col justify-start items-start gap-4'>
-                            <div
-                                className='self-stretch justify-start text-[#FAF3F3] text-base font-semibold tracking-wide'>Applications
-                            </div>
-                            <div className='self-stretch h-px bg-[#262626]'/>
-                            <div
-                                className='self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Etc.
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Etc.
-                                </div>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </div>
-                        </div>
-                        <div className='self-stretch flex flex-col justify-start items-start gap-4'>
-                            <div
-                                className='self-stretch justify-start text-[#FAF3F3] text-base font-semibold tracking-wide'>Applications
-                            </div>
-                            <div className='self-stretch h-px bg-[#262626]'/>
-                            <div
-                                className='self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Etc.
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Etc.
-                                </div>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </div>
-                        </div>
-                        <div className='self-stretch flex flex-col justify-start items-start gap-4'>
-                            <div
-                                className='self-stretch justify-start text-[#FAF3F3] text-base font-semibold tracking-wide'>Applications
-                            </div>
-                            <div className='self-stretch h-px bg-[#262626]'/>
-                            <div
-                                className='self-stretch p-4 bg-[#242222] rounded-md flex flex-col justify-start items-start gap-4 overflow-hidden'>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-semibold tracking-wide'>Etc.
-                                </div>
-                                <div
-                                    className='self-stretch justify-start text-[#FAF3F3] text-sm font-normal'>Etc.
-                                </div>
-                                <div className='w-60 h-32 bg-stone-700'/>
-                            </div>
-                        </div>
+                            </ProjectItem>
+                        </Section>
+                        <Section id={'artificial-intelligence'} name={'Artificial Intelligence'}>
+                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                        </Section>
+                        <Section id={'graphics'} name={'Graphics'}>
+                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                        </Section>
+                        <Section id={'game-development'} name={'Game Development'}>
+                            <ProjectItem description={'Etc.'} link={''} name={'Etc.'}/>
+                        </Section>
                     </div>
                     <div
                         className='w-48 self-stretch p-4 inline-flex flex-col justify-start items-start gap-4'>
