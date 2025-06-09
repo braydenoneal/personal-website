@@ -11,14 +11,14 @@ import React from 'react'
 
 export default function Projects() {
     return (
-        <div className='self-stretch inline-flex flex-col justify-start items-center gap-4'>
+        <div className='self-stretch flex flex-col items-center gap-4'>
             <ImageHeader name={'Projects'}>
                 <div className='w-96 py-4 relative flex flex-col justify-center items-center'>
                     <Image src={'/chip.svg'} alt={'Chip'} width={96} height={96}/>
                 </div>
             </ImageHeader>
-            <div className='relative'>
-                <div className='w-[1024px] inline-flex justify-start items-start relative'>
+            <div className='self-stretch flex justify-center'>
+                <div className='flex-1 max-w-[1024px] flex px-4 items-start'>
                     <Outline name={'Projects'}>
                         <OutlineLink id={'websites'} name={'Websites'}/>
                         <OutlineLink id={'applications'} name={'Applications'}/>
@@ -26,7 +26,7 @@ export default function Projects() {
                         <OutlineLink id={'graphics'} name={'Graphics'}/>
                         <OutlineLink id={'game-development'} name={'Game Development'}/>
                     </Outline>
-                    <div className='flex-1 p-4 inline-flex flex-col justify-start items-start gap-4 top-20'>
+                    <div className='flex-1 p-4 flex flex-col gap-4 top-20'>
                         <Section id={'websites'} name={'Websites'}>
                             <ProjectItem description={'Software engineering projects, music, and contact info'}
                                          link={'https://github.com/braydenoneal/personal-website'}

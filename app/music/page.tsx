@@ -17,8 +17,8 @@ export default function Music() {
                     <Image src={'/keys.svg'} alt={'Keys'} width={242} height={96}/>
                 </div>
             </ImageHeader>
-            <div className='relative'>
-                <div className='w-[1024px] inline-flex justify-start items-start relative'>
+            <div className='self-stretch flex justify-center'>
+                <div className='flex-1 max-w-[1024px] flex px-4 items-start'>
                     <Outline name={'Music'}>
                         <OutlineLink id={'social-media'} name={'Social Media'}/>
                         <OutlineLink id={'song-demos'} name={'Song Demos'}/>

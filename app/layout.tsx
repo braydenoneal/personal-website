@@ -37,7 +37,7 @@ export default function RootLayout({
         >
             <header className={'sticky h-16 top-0 border-b bg-[#171615] border-[#262626] z-10'}>
                 <div className={'h-16 flex items-center justify-between mx-auto max-w-[1024px] px-4'}>
-                    <Link className={'flex gap-4 items-center font-medium text-sm'}
+                    <Link className={'flex gap-4 items-center font-medium text-sm text-nowrap'}
                           href={'/'}>
                         <Image src={'/logo.svg'} alt={'Logo'} width={32} height={32}/>
                         Brayden O’Neal
