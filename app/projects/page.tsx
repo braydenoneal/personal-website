@@ -34,10 +34,16 @@ export default function Projects() {
                                 <ProjectImage alt={'Personal website'} src={'/images/projects/personal-website.png'}/>
                             </ProjectItem>
                             <ProjectItem description={'Small Music Therapy business website'}
-                                         link={'https://www.garnermusictherapyllc.com/'}
+                                         link={'https://github.com/braydenoneal/logangarnermusictherapyllc'}
                                          name={'Music Therapy Website'}>
                                 <ProjectImage alt={'Garner Music Therapy'}
                                               src={'/images/projects/garner-music-therapy.png'}/>
+                            </ProjectItem>
+                            <ProjectItem description={'Express.js website for displaying weather information'}
+                                         link={'https://github.com/braydenoneal/weather-website'}
+                                         name={'Weather Website'}>
+                                <ProjectImage alt={'Weather Website'}
+                                              src={'/images/projects/weather-website.png'}/>
                             </ProjectItem>
                             <ProjectItem description={'Admin panel for the Drury Mirror news website'}
                                          link={'https://github.com/drury-mirror/drury-mirror'}
